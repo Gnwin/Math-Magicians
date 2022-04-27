@@ -3,17 +3,14 @@ import React from 'react';
 class Calculator extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      value: 0,
-    };
+    this.state = {};
   }
 
   render() {
-    const { value } = this.state;
     return (
       <div>
-        <div>{value}</div>
-        <div>ac</div>
+        <h1>Title</h1>
+        <div>Calculator</div>
       </div>
     );
   }
