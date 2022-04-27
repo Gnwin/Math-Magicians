@@ -1,1 +1,22 @@
+.app {
+  width: 30%;
+}
 
+.calculator {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  /* justify-content: center; */
+  align-content: center;
+}
+
+.answer {
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  text-align: right;
+}
+
+.zero {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
