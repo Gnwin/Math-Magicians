@@ -5,7 +5,6 @@
 .calculator {
   display: grid;
   grid-template-columns: repeat(4, auto);
-  /* align-content: center; */
 }
 
 .answer {
