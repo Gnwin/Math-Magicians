@@ -10,25 +10,25 @@ class Calculator extends React.Component {
     return (
       <div className="calculator">
         <div className="answer">0</div>
-        <div>AC</div>
-        <div>+-</div>
-        <div>%</div>
-        <div>/</div>
-        <div>7</div>
-        <div>8</div>
-        <div>9</div>
-        <div>x</div>
-        <div>4</div>
-        <div>5</div>
-        <div>6</div>
-        <div>-</div>
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>+</div>
-        <div className="zero">0</div>
-        <div>.</div>
-        <div>=</div>
+        <div className="center">AC</div>
+        <div className="center">+-</div>
+        <div className="center">%</div>
+        <div className="center orange">/</div>
+        <div className="center">7</div>
+        <div className="center">8</div>
+        <div className="center">9</div>
+        <div className="center orange">x</div>
+        <div className="center">4</div>
+        <div className="center">5</div>
+        <div className="center">6</div>
+        <div className="center orange">-</div>
+        <div className="center">1</div>
+        <div className="center">2</div>
+        <div className="center">3</div>
+        <div className="center orange">+</div>
+        <div className="center zero">0</div>
+        <div className="center">.</div>
+        <div className="center orange">=</div>
       </div>
     );
   }
