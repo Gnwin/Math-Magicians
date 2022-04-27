@@ -11,7 +11,10 @@ class Calculator extends React.Component {
   render() {
     const { value } = this.state;
     return (
-      <div>{value}</div>
+      <div>
+        <div>{value}</div>
+        <div>ac</div>
+      </div>
     );
   }
 }
