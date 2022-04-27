@@ -4,7 +4,7 @@ A website with a calculator
 
 ## Screenshot
 
-<!-- <img src="./src/assets/images/Screenshot 2022-04-23 at 11.35.00 PM.png"> -->
+<img src="./src/assets/images/Screenshot 2022-04-27 at 8.04.36 AM.png">
 
 ## Test Screenshot
 
