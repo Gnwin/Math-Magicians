@@ -24,7 +24,7 @@ A website with a calculator
 To get a local copy up and running follow this simple step:
 
 - Clone repository to your local machine: `www.github.com/gnwin/math-magicians.git`
-- Run `git checkout feature/setup` to switch to develop branch
+- Run `git checkout feature/components` to switch to develop branch
 - Run `npm install` to install dependencies
 - Run `npm start` to start the server
 
