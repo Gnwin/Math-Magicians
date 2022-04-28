@@ -1,10 +1,11 @@
 .app {
-  width: 30%;
+  /* width: 30%; */
 }
 
 .calculator {
   display: grid;
   grid-template-columns: repeat(4, auto);
+  width: 30%;
 }
 
 .answer {
