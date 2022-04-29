@@ -24,12 +24,11 @@ class Calculator extends React.Component {
 
   clickButton = (event) => {
     event.preventDefault();
-    let buttonContent = event.target.innerHTML;
+    const buttonContent = event.target.innerHTML;
     const { numbers, operands } = this.props;
     let calcData;
-    if (operands.includes(buttonContent) ) {
+    if (operands.includes(buttonContent)) {
       calcData = calculate(this.state, buttonContent);
-      console.log(calcData);
       this.setState({
         total: calcData.total,
         next: '',
@@ -37,7 +36,6 @@ class Calculator extends React.Component {
       });
     } else if (buttonContent === '=') {
       calcData = calculate(this.state, buttonContent);
-      console.log(calcData);
       this.setState({
         total: calcData.total,
         next: '',
@@ -45,7 +43,6 @@ class Calculator extends React.Component {
       });
     } else if (buttonContent === 'AC') {
       calcData = calculate(this.state, buttonContent);
-      console.log(calcData);
       this.setState({
         total: '',
         next: '',
@@ -53,29 +50,23 @@ class Calculator extends React.Component {
       });
     } else if (buttonContent === '+/-') {
       calcData = calculate(this.state, buttonContent);
-      console.log(calcData);
       this.setState({
         total: 'undefined',
         next: '',
         operation: '',
       });
     } else {
-      console.log(calcData);
       calcData = calculate(this.state, buttonContent);
-      console.log(calcData);
-      console.log(buttonContent);
-      this.setState((oldState)=>({
-        next: oldState.next + buttonContent
-      })); 
+      this.setState((oldState) => ({
+        next: oldState.next + buttonContent,
+      }));
     }
-    
   }
 
   render() {
-    console.log(this.state)
     return (
       <div className="calculator">
-        <Screen data={this.state} /> 
+        <Screen data={this.state} />
         <div className="center">AC</div>
         <div className="center">+/-</div>
         <div className="center">%</div>
@@ -103,19 +94,8 @@ class Calculator extends React.Component {
 export default Calculator;
 
 Calculator.propTypes = {
-  number: PropTypes.array.isRequired, // eslint-disable-line react/forbid-prop-types
+  numbers: PropTypes.array.isRequired, // eslint-disable-line react/forbid-prop-types
   operands: PropTypes.array.isRequired, // eslint-disable-line react/forbid-prop-types
 };
-
-// any: Props of any data type can get validated by this.
-// symbol: Props with symbol data type can be validated by this.
-// func: Function PropType can be used for validation by this validator.
-// array: Prop with an array data type can get validated by this.
-// bool: Props with Boolean data type can get validated by this.
-// string: Props with String data type can get validated by this.
-// object: Object type of prop can get validated by this.
-// number: Props with Numeric data type can get validated by this.
-
-// eslint-disable-line react/no-unused-state
 
 /* eslint-enable */

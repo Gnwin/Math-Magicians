@@ -1,8 +1,6 @@
 /* eslint-disable */
 import React from 'react';
 
-import PropTypes from 'prop-types';
-
 class Screen extends React.Component {
   constructor(props) {
     super(props);
@@ -13,39 +11,25 @@ class Screen extends React.Component {
 
   render() {
     const { content } = this.state;
-    console.log(content)
-    let ans;
-    const data = this.props.data; // eslint-disable-line no-unused-vars
-    console.log(data)
+    let answer;
+    const data = this.props.data;
     if (!data.total && data.next && !data.operation) {
-      ans = data.next;
+      answer = data.next;
     } else if (data.total && !data.next && data.operation) {
-      ans = content;
+      answer = content;
     } else if (data.total && !data.next && !data.operation) {
-      ans = data.total;
+      answer = data.total;
     } else if (data.total && data.next && data.operation) {
-      ans = data.next;
+      answer = data.next;
     } else {
-      ans = content;
+      answer = content;
     }
 
-    console.log(ans);
     return (
-      <div className="answer">{ans}</div>
+      <div className="answer">{answer}</div>
     );
   }
 }
-
-Screen.propTypes = {
-  total: PropTypes.any.isRequired, // eslint-disable-line react/forbid-prop-types
-  next: PropTypes.any.isRequired, // eslint-disable-line react/forbid-prop-types
-  operation: PropTypes.any.isRequired, // eslint-disable-line react/forbid-prop-types
-};
-
-// Screen.defaultProps = {
-//   output: 0
-// }
+/* eslint-enable */
 
 export default Screen;
-
-/* eslint-enable */
