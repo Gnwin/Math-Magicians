@@ -16,7 +16,7 @@ class Screen extends React.Component {
     if (!data.total && data.next && !data.operation) {
       answer = data.next;
     } else if (data.total && !data.next && data.operation) {
-      answer = content;
+      answer = data.operation;
     } else if (data.total && !data.next && !data.operation) {
       answer = data.total;
     } else if (data.total && data.next && data.operation) {

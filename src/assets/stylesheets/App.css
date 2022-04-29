@@ -13,7 +13,7 @@
   grid-column-start: 1;
   grid-column-end: 5;
   text-align: right;
-  padding: 0.7rem 0.5rem 0.7rem 0;
+  padding: 0.7rem 0.6rem 0.7rem 0;
   background-color: rgb(143, 141, 141);
   color: white;
   border: 1px solid white;
@@ -29,6 +29,7 @@
   padding: 0.7rem 2.2rem;
   background-color: rgb(227, 227, 227);
   border: 1px solid white;
+  cursor: pointer;
 }
 
 .orange {
