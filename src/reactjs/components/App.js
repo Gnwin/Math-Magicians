@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../stylesheets/App.css';
+import '../../assets/stylesheets/App.css';
 import Calculator from './Calculator';
 import numbers from './numbers';
 import operands from './operands';
