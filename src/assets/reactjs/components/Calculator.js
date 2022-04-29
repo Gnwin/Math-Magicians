@@ -94,8 +94,8 @@ class Calculator extends React.Component {
 export default Calculator;
 
 Calculator.propTypes = {
-  numbers: PropTypes.array.isRequired, // eslint-disable-line react/forbid-prop-types
-  operands: PropTypes.array.isRequired, // eslint-disable-line react/forbid-prop-types
+  numbers: PropTypes.array.isRequired,
+  operands: PropTypes.array.isRequired,
 };
 
 /* eslint-enable */
