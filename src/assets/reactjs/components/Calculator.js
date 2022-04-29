@@ -25,7 +25,7 @@ class Calculator extends React.Component {
   clickButton = (event) => {
     event.preventDefault();
     const buttonContent = event.target.innerHTML;
-    const { numbers, operands } = this.props;
+    const operands = this.props.operands;
     let calcData;
     if (operands.includes(buttonContent)) {
       calcData = calculate(this.state, buttonContent);
