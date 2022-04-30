@@ -11,8 +11,7 @@ const App = () => {
   useEffect(() => {
     setNumbers(numbers);
     setOperands(operands);
-    console.log('mounted');
-  }, [numbers, operands]);
+  }, []);
 
   return (
     <div className="app">

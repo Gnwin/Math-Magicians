@@ -56,7 +56,6 @@ class Calculator extends React.Component {
         operation: '',
       });
     } else {
-      calcData = calculate(this.state, buttonContent);
       this.setState((oldState) => ({
         next: oldState.next + buttonContent,
       }));
