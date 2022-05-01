@@ -1,14 +1,10 @@
 /* eslint-disable */
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 const Screen = (props) => {
-  const [screenState, setScreenState] = useState({});
-
-  useEffect(() => {
-    setScreenState({
-      content: 0,
-    });
-  }, []);
+  const [screenState] = useState({
+    content: 0,
+  });
 
   const { content } = screenState;
   let answer;
