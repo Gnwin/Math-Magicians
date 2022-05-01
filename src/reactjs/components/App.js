@@ -1,33 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../../assets/stylesheets/App.css';
 import Calculator from './Calculator';
 import numbers from './numbers';
 import operands from './operands';
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      operands: [],
-      numbers: [],
-    };
-  }
+const App = () => {
+  const [calcNumbers] = useState(numbers);
+  const [calcOperands] = useState(operands);
 
-  componentDidMount = () => {
-    this.setState({
-      operands,
-      numbers,
-    });
-  }
-
-  render() {
-    const { operands, numbers } = this.state;
-    return (
-      <div className="app">
-        <Calculator operands={operands} numbers={numbers} />
-      </div>
-    );
-  }
-}
+  return (
+    <div className="app">
+      <Calculator operands={calcOperands} numbers={calcNumbers} />
+    </div>
+  );
+};
 
 export default App;

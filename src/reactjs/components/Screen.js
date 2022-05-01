@@ -1,35 +1,31 @@
 /* eslint-disable */
-import React from 'react';
+import React, { useState } from 'react';
 
-class Screen extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      content: 0,
-    };
+const Screen = (props) => {
+  const [screenState] = useState({
+    content: 0,
+  });
+
+  const { content } = screenState;
+  let answer;
+  const data = props.data;
+  if (!data.total && data.next && !data.operation) {
+    answer = data.next;
+  } else if (data.total && !data.next && data.operation) {
+    answer = data.operation;
+  } else if (data.total && !data.next && !data.operation) {
+    answer = data.total;
+  } else if (data.total && data.next && data.operation) {
+    answer = data.next;
+  } else {
+    answer = content;
   }
 
-  render() {
-    const { content } = this.state;
-    let answer;
-    const data = this.props.data;
-    if (!data.total && data.next && !data.operation) {
-      answer = data.next;
-    } else if (data.total && !data.next && data.operation) {
-      answer = data.operation;
-    } else if (data.total && !data.next && !data.operation) {
-      answer = data.total;
-    } else if (data.total && data.next && data.operation) {
-      answer = data.next;
-    } else {
-      answer = content;
-    }
-
-    return (
-      <div className="answer">{answer}</div>
-    );
-  }
+  return (
+    <div className="answer">{answer}</div>
+  );
 }
-/* eslint-enable */
 
 export default Screen;
+
+/* eslint-enable */
