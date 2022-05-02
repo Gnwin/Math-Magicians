@@ -11,6 +11,7 @@ const Calculator = (props) => {
     next: '',
     operation: '',
   });
+  
   useEffect(() => {
     const buttons = document.querySelectorAll('.center');
     buttons.forEach((button) => {
