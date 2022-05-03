@@ -10,22 +10,19 @@
   font-size: 3rem;
 }
 
+.nav-link {
+  font-size: 1.5rem;
+  padding: 0 0.8rem;
+  border-left: 2px solid black;
+}
+
 .nav-link:first-child {
   padding-left: 0;
   border-left: none;
 }
 
-.nav-link {
-  padding: 0 0.8rem;
-  border-left: 2px solid black;
-}
-
 .nav-link:last-child {
   padding-right: 0;
-}
-
-.nav-link {
-  font-size: 1.5rem;
 }
 
 .home-title {
@@ -87,4 +84,3 @@
 .quote-msg {
   font-size: 1.7rem;
 }
-
