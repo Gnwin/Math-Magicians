@@ -1,7 +1,6 @@
 .html {
   font-size: 87.5%;
   scroll-behavior: smooth;
-  background-color: darkolivegreen;
 }
 
 .body {
@@ -20,7 +19,6 @@
 }
 
 .appwidth {
-  max-width: 80rem;
-  width: 80%;
+  width: 90%;
   margin: auto;
 }

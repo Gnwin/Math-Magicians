@@ -1,7 +1,50 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  margin-bottom: 3rem;
+}
+
+.nav-title {
+  font-size: 3rem;
+}
+
+.nav-link:first-child {
+  padding-left: 0;
+  border-left: none;
+}
+
+.nav-link {
+  padding: 0 0.8rem;
+  border-left: 2px solid black;
+}
+
+.nav-link:last-child {
+  padding-right: 0;
+}
+
+.nav-link {
+  font-size: 1.5rem;
+}
+
+.home-title {
+  font-size: 1.7rem;
+}
+
+.calcpage {
+  display: flex;
+  justify-content: space-between;
+}
+
+.calctitle {
+  font-size: 1.7rem;
+}
+
 .calculator {
   display: grid;
   grid-template-columns: repeat(4, auto);
-  width: 30%;
+  width: 55%;
 }
 
 .answer {
@@ -31,3 +74,17 @@
 .orange {
   background-color: rgb(248, 182, 59);
 }
+
+.quote {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55vh;
+  padding: 2rem;
+}
+
+.quote-msg {
+  font-size: 1.7rem;
+}
+
