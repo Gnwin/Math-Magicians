@@ -12,7 +12,7 @@ const Navigation = () => {
       <div className="nav-title">{navContent.title}</div>
       <div className="nav-links" data-testid="nav-b">
         {navContent.links.map((link, index) => (
-          <Link to={`/${link.toLowerCase()}`} key={link} className="nav-link" data-testid={`nav-${index+1}`}>{link}</Link>
+          <Link to={`/${link.toLowerCase()}`} key={link} className="nav-link" data-testid={`nav-${index + 1}`}>{link}</Link>
         ))}
       </div>
     </div>

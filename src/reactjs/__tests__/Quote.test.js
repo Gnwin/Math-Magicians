@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react'
+import { render, screen } from '@testing-library/react';
 import renderer from 'react-test-renderer';
 import '@testing-library/jest-dom';
 
@@ -17,7 +17,7 @@ describe('it tests the Quote Component', () => {
     const quoteComponent = screen.getByTestId('quote-1');
     const quotemsg = screen.getByTestId('quote-2');
     expect(quoteComponent).toContainElement(quotemsg);
-  })
+  });
 
   it('checks if quotemsg has a text content', () => {
     render(<Quote />);

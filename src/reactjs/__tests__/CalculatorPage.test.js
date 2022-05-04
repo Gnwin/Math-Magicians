@@ -1,9 +1,8 @@
-import {render, screen} from '@testing-library/react'
+import { render, screen } from '@testing-library/react';
 import renderer from 'react-test-renderer';
-import '@testing-library/jest-dom'
+import '@testing-library/jest-dom';
 
 import CalculatorPage from '../components/CalculatorPage';
-
 
 describe('it tests the CalculatorPage Component', () => {
   it('renders correctly', () => {

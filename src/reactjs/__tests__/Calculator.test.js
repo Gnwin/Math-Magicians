@@ -6,7 +6,6 @@ import numbers from '../components/numbers';
 import operators from '../components/operators';
 import Calculator from '../components/Calculator';
 
-
 describe('it tests the Calculator Component', () => {
   it('renders correctly', () => {
     const tree = renderer

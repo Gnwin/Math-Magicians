@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import renderer from 'react-test-renderer';
 import '@testing-library/jest-dom';
 
-import Home from "../components/Home";
+import Home from '../components/Home';
 
 describe('it tests the Home Component', () => {
   it('renders correctly', () => {
