@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 
 import numbers from './numbers';
-import operands from './operands';
+import operators from './operators';
 import Calculator from './Calculator';
 
 const CalculatorPage = () => {
   const [calcNumbers] = useState(numbers);
-  const [calcOperands] = useState(operands);
+  const [calcOperators] = useState(operators);
 
   return (
-    <div className="calcpage">
-      <div className="calctitle">Lets do some math!</div>
-      <Calculator operands={calcOperands} numbers={calcNumbers} />
+    <div className="calcpage" data-testid="calc-1">
+      <div className="calctitle" data-testid="calc-2">Lets do some math!</div>
+      <Calculator operators={calcOperators} numbers={calcNumbers} />
     </div>
   );
 };

@@ -11,12 +11,12 @@ const Calculator = (props) => {
     operation: '',
   });
 
-  const { numbers, operands } = props;
+  const { numbers, operators } = props;
 
   const clickButton = (event) => {
     event.preventDefault();
     const buttonContent = event.target.innerHTML;
-    if (operands.includes(buttonContent)) {
+    if (operators.includes(buttonContent)) {
       setCalcState((oldCalcState) => ({
         total: (calculate(oldCalcState, buttonContent)).total,
         next: '',
@@ -63,7 +63,7 @@ const Calculator = (props) => {
   }, []);
 
   return (
-    <div className="calculator">
+    <div className="calculator" data-testid="calc">
       <Screen data={calcState} />
       <div className="center">AC</div>
       <div className="center">+/-</div>
@@ -92,5 +92,5 @@ export default Calculator;
 
 Calculator.propTypes = {
   numbers: PropTypes.instanceOf(Array).isRequired,
-  operands: PropTypes.arrayOf(PropTypes.string).isRequired,
+  operators: PropTypes.arrayOf(PropTypes.string).isRequired,
 };

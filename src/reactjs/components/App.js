@@ -8,7 +8,7 @@ import CalculatorPage from './CalculatorPage';
 import Quote from './Quote';
 
 const App = () => (
-  <div className="appwidth">
+  <div className="appwidth" data-testid="app-1">
     <div className="header">
       <Navigation />
     </div>
