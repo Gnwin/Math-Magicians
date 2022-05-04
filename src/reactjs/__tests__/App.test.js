@@ -43,7 +43,7 @@ describe('it tests the App Component', () => {
     expect(quoteContainer).toHaveClass('quote');
   });
 
-  it('When user click 8 the value it is shown in the answer cell', () => {
+  it('When user click 8 the value is shown in the answer cell', () => {
     render(<BrowserRouter><App /></BrowserRouter>);
     const linkCalculator = screen.getByText('Calculator');
     fireEvent.click(linkCalculator);
@@ -53,7 +53,7 @@ describe('it tests the App Component', () => {
     expect(answerCell.innerHTML).toBe('8');
   });
 
-  it('When user perform a unary operation it is shown the correct result', () => {
+  it('When user performs an unary operation it is shown the correct result', () => {
     render(<BrowserRouter><App /></BrowserRouter>);
     const linkCalculator = screen.getByText('Calculator');
     fireEvent.click(linkCalculator);
@@ -65,7 +65,7 @@ describe('it tests the App Component', () => {
     expect(answerCell.innerHTML).toBe('-4');
   });
 
-  it('When user perform a multiplication it is shown the correct result', () => {
+  it('When user performs a multiplication it is shown the correct result', () => {
     render(<BrowserRouter><App /></BrowserRouter>);
     const linkCalculator = screen.getByText('Calculator');
     fireEvent.click(linkCalculator);
