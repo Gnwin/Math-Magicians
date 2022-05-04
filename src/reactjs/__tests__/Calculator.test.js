@@ -1,14 +1,6 @@
-// import react-testing methods
-import {render, fireEvent, waitFor, screen, cleanup} from '@testing-library/react'
-
+import { render, screen } from '@testing-library/react';
 import renderer from 'react-test-renderer';
-
-// import { renderHook } from '@testing-library/react-hooks';
-
-// add custom jest matchers from jest-dom
-import '@testing-library/jest-dom'
-
-// import { renderHook } from '@testing-library/react-hooks'
+import '@testing-library/jest-dom';
 
 import numbers from '../components/numbers';
 import operators from '../components/operators';

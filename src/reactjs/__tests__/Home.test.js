@@ -1,19 +1,8 @@
-// import dependencies
-import React from 'react';
-
-// import react-testing methods
-import {render, fireEvent, waitFor, screen, cleanup} from '@testing-library/react'
-
+import { render, screen } from '@testing-library/react';
 import renderer from 'react-test-renderer';
+import '@testing-library/jest-dom';
 
-// add custom jest matchers from jest-dom
-import '@testing-library/jest-dom'
-
-// the component to test
 import Home from "../components/Home";
-
-// import Link from '../Link.react';
-
 
 describe('it tests the Home Component', () => {
   it('renders correctly', () => {
@@ -46,6 +35,6 @@ describe('it tests the Home Component', () => {
   it('checks if Home Component has a title description', () => {
     render(<Home />);
     const homeComponent = screen.getByTestId('home-1');
-    expect(homeComponent).not.toHaveAccessibleDescription()
+    expect(homeComponent).not.toHaveAccessibleDescription();
   });
 });

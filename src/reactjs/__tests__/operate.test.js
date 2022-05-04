@@ -14,7 +14,7 @@ describe('executes calculate function', () => {
     expect(total).toBe('2');
   });
 
-  it('returns a total value', () => {
+  it('does not return a wrong total value', () => {
     let total = operate(String(object.total), String(object.next), object.operation);
     expect(total).not.toBe('3');
   });
