@@ -12,7 +12,7 @@ describe('it tests the App Component', () => {
     expect(appComponent).toBeInTheDocument();
   });
 
-  it('renders quote component correctly', () => {
+  it('renders App component correctly', () => {
     const tree = renderer
       .create(<BrowserRouter><App /></BrowserRouter>)
       .toJSON();
