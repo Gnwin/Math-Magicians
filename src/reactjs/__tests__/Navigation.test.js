@@ -1,9 +1,9 @@
 import { render, fireEvent, screen } from '@testing-library/react';
 import renderer from 'react-test-renderer';
-import App from '../components/App';
 import { BrowserRouter } from 'react-router-dom';
 
 import Navigation from '../components/Navigation';
+import App from '../components/App';
 
 describe('it tests the Navigation Component', () => {
   it('renders correctly', () => {
