@@ -10,8 +10,7 @@ A website with a calculator
 
 ## Test Screenshot
 
-<!-- <img src="./src/assets/images/Screenshot 2022-04-24 at 5.40.48 AM.png"> -->
-- Coming soon!
+<img src="./src/assets/images/Screenshot 2022-05-05 at 10.52.19 AM.png">
 
 ## Built With
 
@@ -45,6 +44,10 @@ To get a local copy up and running follow this simple step:
 👤 **@gnwin**
 
 - GitHub: [@gnwin](https://github.com/gnwin)
+
+👤 **@neckerfree**
+
+- GitHub: [@neckerfree](https://github.com/NeckerFree)
 
 ## 🤝 Contributing
 
