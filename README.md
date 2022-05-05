@@ -7,6 +7,10 @@ A website with a calculator
 <img src="./src/assets/images/Screenshot 2022-05-03 at 2.01.01 PM.png">
 <img src="./src/assets/images/Screenshot 2022-05-03 at 2.01.25 PM.png">
 
+## Live preview
+
+[math-magicians link](https://chimerical-genie-870ea7.netlify.app)
+
 ## Test Screenshot
 
 <img src="./src/assets/images/Screenshot 2022-05-05 at 10.52.19 AM.png">
