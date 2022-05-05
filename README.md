@@ -6,12 +6,10 @@ A website with a calculator
 
 <img src="./src/assets/images/Screenshot 2022-05-03 at 2.01.01 PM.png">
 <img src="./src/assets/images/Screenshot 2022-05-03 at 2.01.25 PM.png">
-<img src="./src/assets/images/Screenshot 2022-05-03 at 2.01.48 PM.png">
 
 ## Test Screenshot
 
-<!-- <img src="./src/assets/images/Screenshot 2022-04-24 at 5.40.48 AM.png"> -->
-- Coming soon!
+<img src="./src/assets/images/Screenshot 2022-05-05 at 10.52.19 AM.png">
 
 ## Built With
 
@@ -27,7 +25,7 @@ A website with a calculator
 To get a local copy up and running follow this simple step:
 
 - Clone repository to your local machine: `www.github.com/gnwin/math-magicians.git`
-- Run `git checkout feature/full`
+- Run `git checkout feature/test`
 - Run `npm install` to install dependencies
 - Run `npm start` to start the server
 
@@ -45,6 +43,10 @@ To get a local copy up and running follow this simple step:
 👤 **@gnwin**
 
 - GitHub: [@gnwin](https://github.com/gnwin)
+
+👤 **@neckerfree**
+
+- GitHub: [@neckerfree](https://github.com/NeckerFree)
 
 ## 🤝 Contributing
 

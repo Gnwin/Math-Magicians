@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it tests the App Component renders App component correctly 1`] = `
+<div
+  className="appwidth"
+  data-testid="app-1"
+>
+  <div
+    className="header"
+  >
+    <div
+      className="nav"
+      data-testid="nav-a"
+    >
+      <div
+        className="nav-title"
+      >
+        Math magicians
+      </div>
+      <div
+        className="nav-links"
+        data-testid="nav-b"
+      >
+        <a
+          className="nav-link"
+          data-testid="nav-1"
+          href="/home"
+          onClick={[Function]}
+        >
+          Home
+        </a>
+        <a
+          className="nav-link"
+          data-testid="nav-2"
+          href="/calculator"
+          onClick={[Function]}
+        >
+          Calculator
+        </a>
+        <a
+          className="nav-link"
+          data-testid="nav-3"
+          href="/quote"
+          onClick={[Function]}
+        >
+          Quote
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    className="main"
+  >
+    <div
+      data-testid="home-1"
+    >
+      <h1
+        className="home-title"
+        data-testid="home-2"
+      >
+        Welcome to our page!
+      </h1>
+      <br />
+      <p
+        data-testid="home-3"
+      >
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis cumque explicabo iusto magnam harum aut. Eum porro neque, nostrum cupiditate delectus minus cumque ea laboriosam tempora libero laborum quos dolorem! Odio consectetur ex eum. Dignissimos, laboriosam? Nobis incidunt animi ullam sed modi dolor error rerum aperiam facilis. Cumque eaque maiores corporis odio, illo quos? Saepe laboriosam quis dolores ratione asperiores. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis cumque explicabo iusto magnam harum aut. Eum porro neque, nostrum cupiditate delectus minus cumque ea laboriosam tempora libero laborum quos dolorem! Odio consectetur ex eum. Dignissimos, laboriosam? Nobis incidunt animi ullam sed modi dolor error rerum aperiam facilis. Cumque eaque maiores corporis odio, illo quos? Saepe laboriosam quis dolores ratione asperiores.
+      </p>
+      <br />
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis cumque explicabo iusto magnam harum aut. Eum porro neque, nostrum cupiditate delectus minus cumque ea laboriosam tempora libero laborum quos dolorem! Odio consectetur ex eum. Dignissimos, laboriosam? Nobis incidunt animi ullam sed modi dolor error rerum aperiam facilis. Cumque eaque maiores corporis odio, illo quos? Saepe laboriosam quis dolores ratione asperiores. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis cumque explicabo iusto magnam harum aut. Eum porro neque, nostrum cupiditate delectus minus cumque ea laboriosam tempora libero laborum quos dolorem! Odio consectetur ex eum. Dignissimos, laboriosam? Nobis incidunt animi ullam sed modi dolor error rerum aperiam facilis. Cumque eaque maiores corporis odio, illo quos? Saepe laboriosam quis dolores ratione asperiores.
+      </p>
+      <br />
+    </div>
+  </div>
+</div>
+`;
