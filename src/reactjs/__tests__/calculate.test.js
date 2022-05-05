@@ -1,5 +1,4 @@
 import calculate from '../components/calculate';
-
 import numbers from '../components/numbers';
 import operands from '../components/operators';
 

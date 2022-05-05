@@ -32,7 +32,7 @@ describe('it tests the Home Component', () => {
     expect(homeComponent).toContainElement(paragraph);
   });
 
-  it('checks if Home Component has a title description', () => {
+  it('checks if Home Component does not has a title description', () => {
     render(<Home />);
     const homeComponent = screen.getByTestId('home-1');
     expect(homeComponent).not.toHaveAccessibleDescription();

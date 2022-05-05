@@ -1,3 +1,3 @@
-const operators = ['x', '-', '+', '÷', '+/-', '%'];
+const operators = ['x', '-', '+', '÷', '%'];
 
 export default operators;

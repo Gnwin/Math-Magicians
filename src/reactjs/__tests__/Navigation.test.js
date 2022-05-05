@@ -43,7 +43,7 @@ describe('it tests the Navigation Component', () => {
     expect(quoteLink.closest('a')).toHaveAttribute("href", "/quote")
   });
 
-  it('When user click the Home link the home page is shown', () => {
+  it('renders the home page when the user clicks the home link', () => {
     render(<BrowserRouter><App /></BrowserRouter>);
     const homeLink = screen.getByText('Home');
     fireEvent.click(homeLink);
@@ -52,16 +52,15 @@ describe('it tests the Navigation Component', () => {
     expect(firstchild).toHaveClass('home-title');
   });
 
-  it('When user click the Calculator link the calculator page is shown', () => {
+  it('renders the calculator page when the user clicks the calculator link', () => {
     render(<BrowserRouter><App /></BrowserRouter>);
     const calculatorLink = screen.getByText('Calculator');
     fireEvent.click(calculatorLink);
     const calculatorContainer = screen.getByTestId('calc');
-    // expect(calculatorContainer).toBeInTheDocument();
     expect(calculatorContainer).toHaveClass('calculator');
   });
 
-  it('When user click the Quote link the Quote page is shown', () => {
+  it('renders the Quote page when the user clicks the quote link', () => {
     render(<BrowserRouter><App /></BrowserRouter>);
     const quoteLink = screen.getByText('Quote');
     fireEvent.click(quoteLink);

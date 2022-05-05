@@ -19,7 +19,7 @@ describe('it tests the App Component', () => {
     expect(appComponent).toBeInTheDocument();
   });
 
-  it('When user click the Home link the home page is shown', () => {
+  it('renders the home page in the App component when the user clicks the home link', () => {
     render(<BrowserRouter><App /></BrowserRouter>);
     const homeLink = screen.getByText('Home');
     fireEvent.click(homeLink);
@@ -28,7 +28,7 @@ describe('it tests the App Component', () => {
     expect(firstchild).toHaveClass('home-title');
   });
   
-  it('When user click the Calculator link the calculator page is shown', () => {
+  it('renders the calculator page in the App component when the user clicks the calculator link', () => {
     render(<BrowserRouter><App /></BrowserRouter>);
     const calculatorLink = screen.getByText('Calculator');
     fireEvent.click(calculatorLink);
@@ -36,7 +36,7 @@ describe('it tests the App Component', () => {
     expect(calculatorContainer).toHaveClass('calculator');
   });
   
-  it('When user click the Quote link the Quote page is shown', () => {
+  it('renders the Quote page in the App component when the user clicks the quote link', () => {
     render(<BrowserRouter><App /></BrowserRouter>);
     const quoteLink = screen.getByText('Quote');
     fireEvent.click(quoteLink);

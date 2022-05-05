@@ -36,9 +36,9 @@ const Calculator = (props) => {
       });
     } else if (buttonContent === '+/-') {
       setCalcState((oldCalcState) => ({
-        total: calculate(oldCalcState, buttonContent).total,
-        next: calculate(oldCalcState, buttonContent).next,
-        operation: calculate(oldCalcState, buttonContent).operation,
+        total: oldCalcState.total ? (calculate(oldCalcState, buttonContent)).total : '',
+        next: oldCalcState.next ? (calculate(oldCalcState, buttonContent)).next : '',
+        operation: oldCalcState.operation ? (calculate(oldCalcState, buttonContent)).operation : '',
       }));
     } else if (buttonContent === '.') {
       setCalcState((oldCalcState) => ({
