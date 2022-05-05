@@ -42,7 +42,7 @@ To get a local copy up and running follow this simple step:
 - Run `npm install` to install dependencies
 - Run `npm run test` to run test
 
-## Author
+## Authors
 
 👤 **@gnwin**
 
