@@ -1,9 +1,9 @@
 import { render, fireEvent, screen } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
-import App from '../components/App';
 import renderer from 'react-test-renderer';
 import '@testing-library/jest-dom';
 
+import App from '../components/App';
 import CalculatorPage from '../components/CalculatorPage';
 
 describe('it tests the CalculatorPage Component', () => {
