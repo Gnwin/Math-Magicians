@@ -1,85 +1,71 @@
-// import {render, fireEvent, waitFor, screen, cleanup} from '@testing-library/react';
+import { render, fireEvent, screen } from '@testing-library/react';
 import renderer from 'react-test-renderer';
-// import { Link } from 'react-router-dom';
-// import { BrowserRouter, Router, Routes, Route, Link } from 'react-router-dom';
-// import { createMemoryHistory } from 'history';
+import App from '../components/App';
+import { BrowserRouter } from 'react-router-dom';
 
 import Navigation from '../components/Navigation';
 
-// describe('it tests the Navigation Component', () => {
-// test('renders a navigation link', () => {
-//   render(<Navigation />);
-//   // const linkElement = screen.getByText(calculator/i);
-//   // expect(linkElement).toBeInTheDocument();
-//   // expect(screen.getByText('Calculator').closest('a')).toHaveAttribute("href", "/calculator")
-//   const linkElement = screen.getByTestId('nav-a');
-//   expect(linkElement).toHaveClass('nav')
-// });
+describe('it tests the Navigation Component', () => {
+  it('renders correctly', () => {
+    const tree = renderer
+      .create(<BrowserRouter><Navigation /></BrowserRouter>)
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 
-// it('renders the Navigation Component', () => {
-//   render(<Navigation />);
-//   const navigationComponent = screen.getByTestId('nav-a');
-//   expect(navigationComponent).toHaveClass('nav');
-//   // const first = useRef(second);
-// });
+  it('checks if the Navigation Component is in the document', () => {
+    render(<BrowserRouter><Navigation /></BrowserRouter>);
+    const logo = screen.getByText('Math magicians');
+    expect(logo).toBeInTheDocument();
+  });
 
-// it('routes to a new route', async () => {
-//   const history = createMemoryHistory();
+  it('renders a navigation Component', () => {
+    render(<BrowserRouter><Navigation /></BrowserRouter>);
+    const navElement = screen.getByTestId('nav-a');
+    expect(navElement).toHaveClass('nav');
+  });
 
-//   // mock push function
-//   history.push = jest.fn();
+  it('checks if there a Home link in the navigation component', () => {
+    render(<BrowserRouter><Navigation /></BrowserRouter>);
+    const homeLink = screen.getByText('Home');
+    expect(homeLink.closest('a')).toHaveAttribute("href", "/home")
+  });
 
-//   const { getByText } = render(
-//     <Router history={history}>
-//       <Link to="/calculator">Calculator</Link>
-//     </Router>
-//   );
+  it('checks if there a Calculator link in the navigation component', () => {
+    render(<BrowserRouter><Navigation /></BrowserRouter>);
+    const calculatorLink = screen.getByText('Calculator');
+    expect(calculatorLink.closest('a')).toHaveAttribute("href", "/calculator")
+  });
 
-//   fireEvent.click(getByText('Calculator'));
+  it('checks if there a Quote link in the navigation component', () => {
+    render(<BrowserRouter><Navigation /></BrowserRouter>);
+    const quoteLink = screen.getByText('Quote');
+    expect(quoteLink.closest('a')).toHaveAttribute("href", "/quote")
+  });
 
-//   // spy on push calls, assert on url (parameter)
-//   expect(history.push).toHaveBeenCalledWith('/calculator');
-// });
+  it('When user click the Home link the home page is shown', () => {
+    render(<BrowserRouter><App /></BrowserRouter>);
+    const homeLink = screen.getByText('Home');
+    fireEvent.click(homeLink);
+    const homeContainer = screen.getByTestId('home-1');
+    const firstchild = homeContainer.childNodes[0];
+    expect(firstchild).toHaveClass('home-title');
+  });
 
-// it('renders correctly', () => {
-//   const tree = renderer
-//     .create(<Navigation />)
-//     .toJSON();
-//   expect(tree).toMatchSnapshot();
-// });
+  it('When user click the Calculator link the calculator page is shown', () => {
+    render(<BrowserRouter><App /></BrowserRouter>);
+    const calculatorLink = screen.getByText('Calculator');
+    fireEvent.click(calculatorLink);
+    const calculatorContainer = screen.getByTestId('calc');
+    // expect(calculatorContainer).toBeInTheDocument();
+    expect(calculatorContainer).toHaveClass('calculator');
+  });
 
-// it('checks if Home title is a descendant of Home Component', () => {
-//   render(<Home />);
-//   const homeComponent = screen.getByTestId('home-1');
-//   const homeTitle = screen.getByTestId('home-2');
-//   expect(homeComponent).
-//   // const first = useRef(second);
-// });
-
-// it('checks if a p tag is a descendant of Home Component', () => {
-//   render(<Home />);
-//   const homeComponent = screen.getByTestId('home-1');
-//   const paragraph = screen.getByTestId('home-3');
-//   expect(homeComponent).toContainElement(paragraph);
-// });
-
-// it('checks if Home Component has a title description', () => {
-//   render(<Home />);
-//   const homeComponent = screen.getByTestId('home-1');
-//   expect(homeComponent).not.toHaveAccessibleDescription()
-// });
-
-// it('checks if Home Component contains some html content', () => {
-//   render(<Home />);
-//   const homeComponent = screen.getByTestId('home-1');
-//   expect(homeComponent).toContainHTML('');
-// });
-
-// const linkToTest = screen.getByRole("link", { name: /Calculator/i })
-// // I used regex here as a value of name property which ignores casing
-// expect(linkToTest.getAttribute("href")).toMatchInlineSnapshot();
-
-// it('renders correctly', () => {
-//   expect(screen.getByText('Calculator').closest('a')).toHaveAttribute('href', 'http://localhost:3000/calculator')
-// });
-// });
+  it('When user click the Quote link the Quote page is shown', () => {
+    render(<BrowserRouter><App /></BrowserRouter>);
+    const quoteLink = screen.getByText('Quote');
+    fireEvent.click(quoteLink);
+    const quoteContainer = screen.getByTestId('quote-1');
+    expect(quoteContainer).toHaveClass('quote');
+  });
+});
