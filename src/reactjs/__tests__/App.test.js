@@ -27,7 +27,7 @@ describe('it tests the App Component', () => {
     const firstchild = homeContainer.childNodes[0];
     expect(firstchild).toHaveClass('home-title');
   });
-  
+
   it('renders the calculator page in the App component when the user clicks the calculator link', () => {
     render(<BrowserRouter><App /></BrowserRouter>);
     const calculatorLink = screen.getByText('Calculator');
@@ -35,7 +35,7 @@ describe('it tests the App Component', () => {
     const calculatorContainer = screen.getByTestId('calc');
     expect(calculatorContainer).toHaveClass('calculator');
   });
-  
+
   it('renders the Quote page in the App component when the user clicks the quote link', () => {
     render(<BrowserRouter><App /></BrowserRouter>);
     const quoteLink = screen.getByText('Quote');

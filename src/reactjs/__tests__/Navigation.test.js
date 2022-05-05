@@ -28,19 +28,19 @@ describe('it tests the Navigation Component', () => {
   it('checks if there a Home link in the navigation component', () => {
     render(<BrowserRouter><Navigation /></BrowserRouter>);
     const homeLink = screen.getByText('Home');
-    expect(homeLink.closest('a')).toHaveAttribute("href", "/home")
+    expect(homeLink.closest('a')).toHaveAttribute('href', '/home');
   });
 
   it('checks if there a Calculator link in the navigation component', () => {
     render(<BrowserRouter><Navigation /></BrowserRouter>);
     const calculatorLink = screen.getByText('Calculator');
-    expect(calculatorLink.closest('a')).toHaveAttribute("href", "/calculator")
+    expect(calculatorLink.closest('a')).toHaveAttribute('href', '/calculator');
   });
 
   it('checks if there a Quote link in the navigation component', () => {
     render(<BrowserRouter><Navigation /></BrowserRouter>);
     const quoteLink = screen.getByText('Quote');
-    expect(quoteLink.closest('a')).toHaveAttribute("href", "/quote")
+    expect(quoteLink.closest('a')).toHaveAttribute('href', '/quote');
   });
 
   it('renders the home page when the user clicks the home link', () => {
