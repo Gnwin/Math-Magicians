@@ -49,7 +49,7 @@ const Calculator = (props) => {
     } else {
       setCalcState((oldCalcState) => ({
         total: oldCalcState.total ? (calculate(oldCalcState, buttonContent)).total : '',
-        next: oldCalcState.next + buttonContent,
+        next: (calculate(oldCalcState, buttonContent)).next,
         operation: oldCalcState.operation ? (calculate(oldCalcState, buttonContent)).operation : '',
       }));
     }
